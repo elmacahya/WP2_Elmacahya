@@ -1,10 +1,11 @@
 <html>
 
 <head>
-	<title>Form Input MataKuliah</title>
+	<title>Form Input Matakuliah</title>
 </head>
 
 <body>
+	<?php echo validation_errors(); ?>
 	<center>
 		<form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
 			<table>
@@ -22,7 +23,8 @@
 					<th>Kode MTK</th>
 					<th>:</th>
 					<td>
-						<input type="text" name="kode" id="kode" placeholder="Required">					</td>
+						<input type="text" name="kode" id="kode" placeholder="Required">
+					</td>
 				</tr>
 				<tr>
 					<th>Nama MTK</th>
@@ -47,10 +49,8 @@
 							<input type="submit" value="submit">
 						</td>
 					</tr>
-				</tr>
-			</table>
-		</form>
-	</center>
-
-</body>
+				</table>
+			</form>
+		</center>
+	</body>
 </html>
